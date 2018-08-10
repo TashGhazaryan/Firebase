@@ -9,7 +9,7 @@ exports.readData = functions.https.onRequest((request, response) => {
       response.send(snapshot.val());
     },
     errorObject => {
-      console.log("The read failed: " + errorObject.code);
+      console.log("failed: " + errorObject.code);
     }
   );
 });
